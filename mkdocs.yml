@@ -1,0 +1,69 @@
+site_name: CS50 Pong — Покрокова інструкція
+site_description: Покрокове проходження проєкту games50/pong (CS50 2D, LÖVE2D) від порожнього вікна (pong-0) до готової гри (pong-final)
+site_url: https://cpto-bakhmut-materials.github.io/cs50-pong-uk/
+repo_url: https://github.com/CPTO-Bakhmut-Materials/cs50-pong-uk
+repo_name: CPTO-Bakhmut-Materials/cs50-pong-uk
+
+theme:
+  name: material
+  language: uk
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Перемкнути на темну тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Перемкнути на світлу тему
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: uk
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Головна: index.md
+  - Кроки:
+    - "1. pong-1 — The Low-Res Update": diff-0-1.md
+    - "2. pong-2 — The Rectangle Update": diff-1-2.md
+    - "3. pong-3 — The Paddle Update": diff-2-3.md
+    - "4. pong-4 — The Ball Update": diff-3-4.md
+    - "5. pong-5 — The Class Update": diff-4-5.md
+    - "6. pong-6 — The FPS Update": diff-5-6.md
+    - "7. pong-7 — The Collision Update": diff-6-7.md
+    - "8. pong-8 — The Score Update": diff-7-8.md
+    - "9. pong-9 — The Serve Update": diff-8-9.md
+    - "10. pong-10 — The Victory Update": diff-9-10.md
+    - "11. pong-11 — The Audio Update": diff-10-11.md
+    - "12. pong-12 — The Resize Update": diff-11-12.md
+    - "13. pong-final — Прибирання коду": diff-12-final.md
